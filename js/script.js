@@ -78,10 +78,14 @@ let quotes = [
  * `getRandomQuote` function
 ***/
 
+//Returns a random quote when passing the name of the array as the argument
+
 function getRandomQuote(arr){
   let randomNumber = Math.floor(Math.random()* arr.length)
   return arr[randomNumber]
   }
+
+  //Returns a random number 0-255
 
   function getRandomNumber(){
     let randomNumber = Math.floor(Math.random()* 256)
@@ -91,6 +95,8 @@ function getRandomQuote(arr){
 /***
  * `printQuote` function
 ***/
+
+//Displays a random quote to the user
 
 function printQuote(){
   let randomQuote = getRandomQuote(quotes)
@@ -120,6 +126,8 @@ else{
  
 
 }
+
+//Quotes automatically refresh every 10 seconds
 
 setInterval(printQuote, 10000);
 
